@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/tasks
+###
+GET http://localhost:3000/api/tasks?size=1&page=1
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "descritption": "trabajo para mi",
+    "done": false
+}
+###
+GET http://localhost:3000/api/tasks/601af880f409360eac00a6fe
+###
+DELETE http://localhost:3000/api/tasks/601d9700dd09173d2803908d
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/601af880f409360eac00a6fe
+Content-Type: application/json
+
+{
+    "title": "hacer un sitio web con css y html",
+    "done": false
+}
